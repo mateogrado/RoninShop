@@ -1,0 +1,1012 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+body {
+    background: gray;
+}
+
+h3 {
+    color: red;
+    font-size: 45px;
+}
+
+
+/* Productos */
+
+.containerProductoTienda {
+    /* width: 100%; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.containerProductoTienda .card {
+    margin: 10px;
+}
+
+.containerProd {
+    /* width: 100%; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.containerProd .card {
+    margin: 10px;
+    width: 344px;
+}
+
+.ImagenProducto {
+    width: 100%;
+    height: 344px;
+}
+
+.button-ronin {
+    border: 1px solid red;
+    background: red;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    transition: all .2s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button-ronin:hover {
+    background: white;
+    color: red;
+    text-decoration: none;
+}
+
+.button-ronin-red {
+    border: 1px solid red;
+    background: red;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    transition: all .2s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button-ronin-red:hover {
+    background: gray;
+    color: red;
+    text-decoration: none;
+}
+
+
+/* Mis Pedidos */
+
+.ProdMisPedidos {
+    padding: 7px;
+}
+
+.imgMisPedidos {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.quantityMisPedidos,
+.priceMisPedidos {
+    font-size: 1.2em;
+}
+
+
+/* Perfil */
+
+#miPerfil {
+    outline: none;
+}
+
+
+/* Mi Carrito */
+
+.carrito {
+    width: min(1200px, 100%);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.carrito .card {
+    width: calc(33% - 10px);
+    padding: 5px;
+    margin: 5px
+}
+
+.carrito .card .miCarritoImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.carrito .card .info {
+    text-align: center;
+}
+
+.carrito .card .info .name {
+    font-size: 1.4em;
+}
+
+.carrito .card .info .cantYPrecio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.carrito .card .info .cantYPrecio .cantidad {
+    width: 40%;
+}
+
+.carrito .card .info .cantYPrecio .precio {
+    width: 40%;
+    font-size: 1.7em;
+    font: bold;
+}
+
+
+/* TIENDA */
+
+.ImagenTienda {
+    width: 344px;
+    height: 344px;
+}
+
+
+/* Botón css */
+
+.bubbly-button {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    position: relative;
+    border: 2px solid black;
+    z-index: 99;
+}
+
+.bubbly-button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: red;
+    z-index: -1;
+    transition: all .3s linear;
+}
+
+.bubbly-button:hover::before {
+    height: 100%;
+}
+
+.bubbly-button:hover {
+    color: white
+}
+
+
+/* INICIO */
+
+
+/* INICIO --> Titulo */
+
+.Titulo {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Titulo .tituloInicio {
+    /*font-family: 'Oleo Script', cursive;*/
+    color: black;
+    font-size: 45px;
+}
+
+.Titulo .tituloInicio span {
+    color: red;
+}
+
+
+/* INICIO --> Tienda */
+
+.Tienda {
+    /* height: 60vh; */
+    /* padding: 80px; */
+}
+
+.tituloTienda {
+    /* font-family: consolas; */
+    color: black;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.Tienda .card {
+    width: 215px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.Tienda .card img {
+    width: 100%;
+    height: 215px;
+}
+
+.Tienda .card .datos {
+    width: 100%;
+    height: 114px;
+    background: red;
+    color: white;
+    position: relative;
+    padding: 10px;
+}
+
+.Tienda .card .datos .cuadradito {
+    width: 15px;
+    height: 15px;
+    background: red;
+    position: absolute;
+    left: 20px;
+    top: -7px;
+    transform: rotate(45deg);
+}
+
+.Tienda .card .datos .nombre {
+    font-size: 1.1em;
+}
+
+.irTienda {
+    border: 1px solid red;
+    background: red;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    transition: all .2s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.irTienda:hover {
+    background: gray;
+    color: red;
+    text-decoration: none;
+}
+
+
+/* INICIO --> Jugadores */
+
+.Jugadores {
+    margin-top: 100px;
+}
+
+.tituloPlantilla {
+    font-family: 'Handlee', cursive;
+    color: red;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.JugadoresMosaico {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cart {
+    width: 250px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.cart .name {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: cursive;
+    color: rgba(255, 255, 255, 0.421);
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s linear;
+}
+
+.cart .datos {
+    width: 100%;
+    height: 62px;
+    color: white;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(34, 34, 34);
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.23602944595807074) 0%, rgba(34, 34, 34, 0.5665616588432247) 21%, rgba(34, 34, 34, 1) 100%);
+    text-align: center;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.cart:hover .name {
+    top: 100px;
+    opacity: 0;
+}
+
+.cart:hover .datos {
+    top: 170px;
+    height: 160px;
+}
+
+.cart .datos .principales {
+    height: 61px;
+}
+
+hr {
+    margin-top: 1px;
+    width: 200px;
+    margin-left: 25px;
+    border: 1px solid gray;
+}
+
+.cart .datos .secundarios {
+    margin-top: 1.5em;
+}
+
+.cart .datos .principales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cart .datos .principales .Nombre {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.cart .datos .principales span {
+    /* color: gray; */
+    font-weight: lighter;
+}
+
+.cart .datos .secundarios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cart .datos .secundarios .Partidos .title,
+.cart .datos .secundarios .PtsRemate .title,
+.cart .datos .secundarios .PtsBloqueo .title {
+    font-size: 1.1em;
+    color: yellow;
+    position: relative;
+    text-decoration: underline;
+}
+
+
+/* INICIO --> Patrocinadores */
+
+.Patrocinadores {
+    height: 30vh;
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    /* border-left: 3px solid yellow; */
+}
+
+.Patrocinadores .tituloPatrocinadores {
+    position: absolute;
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 1em;
+    left: 5px;
+    top: -5px;
+}
+
+.Patrocinadores .imagenPatrocinador {
+    width: 300px;
+    /* height: 400px; */
+    /* background: red; */
+    position: relative;
+    margin: 10px;
+}
+
+
+/* .Patrocinadores .imagenPatrocinador1{
+  background-image: url('./images/patrocinadores/adidas.png');
+}
+.Patrocinadores .imagenPatrocinador2{
+  background-image: url('./images/patrocinadores/hyuandai.png');
+}
+.Patrocinadores .imagenPatrocinador3{
+  background-image: url('./images/patrocinadores/adidas.png');
+} */
+
+.Patrocinadores .imagenPatrocinador::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: orange;
+    width: 50px;
+    height: 2px;
+    transition: all .3s linear
+}
+
+.Patrocinadores .imagenPatrocinador:hover::before {
+    width: 100%;
+}
+
+
+/* 
+.Patrocinadores .imagenPatrocinador img{
+  width: 100%;
+  height: 100%;
+} */
+
+.Patrocinadores .imagenPatrocinador svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer .titulo {
+    color: white;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+.footer .redessociales {
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .redessociales .red {
+    width: 134px;
+    height: 104px;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #222;
+}
+
+.footer .redessociales .red:hover {
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .redessociales .red .logo {
+    font-size: 1.5em;
+}
+
+.footer .redessociales .fb {
+    background: #3B5998;
+}
+
+.footer .redessociales .ig {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d);
+}
+
+.footer .redessociales .tw {
+    background: #55ACF3;
+}
+
+.footer .redessociales .yt {
+    background: #BB0000;
+}
+
+.footer .creditos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer .creditos .derechos {
+    color: lightgray;
+    font-size: 1em;
+}
+
+.footer .creditos .derechos span {
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+
+/* LOGIN */
+
+.loginTitulo {
+    margin: 6em auto 2em;
+    font-size: 1.5em;
+    color: black;
+}
+
+.loginForm {
+    margin: 1em auto;
+    width: 50%;
+    /* height: 50vh; */
+    /* border: 1px solid white; */
+    background: rgba(0, 0, 0, 0.061);
+    box-shadow: 0 0 20px 5px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+    color: black;
+}
+
+.loginForm .loginCampo {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.loginForm .loginCampo input {
+    width: 50%;
+    border-color: black;
+    outline: none;
+    transition: all .1s linear;
+    text-align: center;
+    /* background: transparent; */
+}
+
+.loginForm .loginCampo input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0;
+    border-color: red;
+    width: 75%;
+}
+
+.loginForm .loginCampo button {
+    border: 1px solid red;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    transition: all .2s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.loginForm .loginCampo button:hover {
+    background: gray;
+    color: red;
+    text-decoration: none;
+}
+
+.loginForm .loginCampo .forgotpass {
+    color: black;
+}
+
+
+/* REGISTER */
+
+.registerTitulo {
+    /* margin: 15px auto 2em; */
+    font-size: 1.5em;
+    color: black;
+}
+
+.registerForm {
+    margin: 1em auto;
+    width: 50%;
+    /* height: 50vh; */
+    /* border: 1px solid white; */
+    background: rgba(0, 0, 0, 0.061);
+    box-shadow: 0 0 20px 5px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+    color: black;
+}
+
+.registerForm .loginCampo {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.registerForm .loginCampo input {
+    width: 50%;
+    border-color: black;
+    outline: none;
+    transition: all .1s linear;
+    text-align: center;
+    /* background: transparent; */
+}
+
+.registerForm .loginCampo input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0;
+    border-color: red;
+    width: 75%;
+}
+
+.registerForm .loginCampo button {
+    border: 1px solid red;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    transition: all .2s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.registerForm .loginCampo button:hover {
+    background: gray;
+    color: red;
+    text-decoration: none;
+}
+
+
+/* RESET PASSWORD BLADE */
+
+.resetPassTitulo {
+    /* margin: 15px auto 2em; */
+    font-size: 1.5em;
+    color: red;
+}
+
+.resetPassForm {
+    margin: 1em auto;
+    width: 50%;
+    /* height: 50vh; */
+    /* border: 1px solid white; */
+    background: rgba(0, 0, 0, 0.061);
+    box-shadow: 0 0 20px 5px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+    color: black;
+}
+
+.resetPassForm .loginCampo {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.resetPassForm .loginCampo input {
+    width: 50%;
+    border-color: black;
+    outline: none;
+    transition: all .1s linear;
+    text-align: center;
+    /* background: transparent; */
+}
+
+.resetPassForm .loginCampo input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0;
+    border-color: red;
+    width: 75%;
+}
+
+.resetPassForm .loginCampo button {
+    border: 1px solid red;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    transition: all .2s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.resetPassForm .loginCampo button:hover {
+    background: white;
+    color: red;
+    text-decoration: none;
+}
+
+
+/* Confirm New Password */
+
+.ConfirmNewPassTitle {
+    /* margin: 15px auto 2em; */
+    font-size: 1.5em;
+    color: red;
+}
+
+.ConfirmNewPassForm {
+    margin: 1em auto;
+    width: 50%;
+    /* height: 50vh; */
+    /* border: 1px solid white; */
+    background: rgba(0, 0, 0, 0.061);
+    box-shadow: 0 0 20px 5px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+    color: black;
+}
+
+.ConfirmNewPassForm .loginCampo {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.ConfirmNewPassForm .loginCampo input {
+    width: 50%;
+    border-color: black;
+    outline: none;
+    transition: all .1s linear;
+    text-align: center;
+    /* background: transparent; */
+}
+
+.ConfirmNewPassForm .loginCampo input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0;
+    border-color: red;
+    width: 75%;
+}
+
+.ConfirmNewPassForm .loginCampo button {
+    border: 1px solid red;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    transition: all .2s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.ConfirmNewPassForm .loginCampo button:hover {
+    background: white;
+    color: red;
+    text-decoration: none;
+}
+
+
+/* CHECKOUT */
+
+.checkoutTitulo {
+    margin: 2em auto 2em;
+    font-size: 1.5em;
+    color: red;
+}
+
+.checkoutForm {
+    margin: 1em auto;
+    width: 50%;
+    /* height: 50vh; */
+    /* border: 1px solid white; */
+    background: rgba(0, 0, 0, 0.061);
+    box-shadow: 0 0 20px 5px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+    color: black;
+}
+
+.checkoutForm .loginCampo {
+    width: 75%;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.checkoutForm .loginCampo input {
+    width: 75%;
+    border-color: black;
+    outline: none;
+    transition: all .1s linear;
+    text-align: center;
+    margin: auto;
+    /* background: transparent; */
+}
+
+.checkoutForm .loginCampo input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0;
+    border-color: red;
+    width: 100%;
+}
+
+.checkoutForm .loginCampo button {
+    border: 1px solid red;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    transition: all .2s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.checkoutForm .loginCampo button:hover {
+    background: white;
+    color: red;
+    text-decoration: none;
+}
+
+.checkoutForm .loginCampo .forgotpass {
+    color: red;
+}
+
+
+/* Notificaciones */
+
+#notification-modal table {
+    width: 100%;
+}
+
+#notification-modal table .titulos {
+    border-bottom: 2px solid black;
+}
+
+#notification-modal table th {
+    padding-left: 5px;
+}
+
+#notification-modal table #mensajeEntrante {
+    width: 20px;
+    border-bottom: 2px solid white;
+}
+
+#notification-modal table .si {
+    background: #eceaea;
+}
+
+#notification-modal table .no {
+    background: #fff;
+    font-weight: bold;
+}
+
+#notification-modal table td {
+    padding: 5px;
+}
+
+#notification-modal table tr #imagen_msj {
+    width: 30px;
+}
+
+#notification-modal table tr #imagen_msj img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+#notification-modal table h2,
+#notification-modal table h4 {
+    text-align: center;
+}
+
+#notification-modal .modal-header #mensajesEnviados,
+#notification-modal .modal-header #mensajesEnviados {
+    text-align: center;
+    margin: auto;
+    margin-right: 10px;
+}
+
+#notification-modal #acciones {
+    text-align: right;
+}
+
+#notification-modal .btn-table {
+    margin-right: 5px;
+}
+
+
+/* Mensaje Recibido */
+
+#mensaje-modal .cabecera-mensaje {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensaje-modal .cabecera-mensaje h2 {
+    margin-top: 10px;
+    /* margin-left: 10px; */
+}
+
+#mensaje-modal .cabecera-mensaje img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#mensaje-modal .cuerpo-mensaje {
+    width: 80%;
+    font-size: 1.2em;
+    margin: auto;
+}
+
+#mensaje-modal .cuerpo-mensaje h4,
+#mensaje-modal .cuerpo-mensaje p {
+    text-align: left;
+}
+
+
+/* Enviar Mensaje */
+
+#enviar-mensaje-modal #destinatario {
+    text-transform: capitalize;
+}
